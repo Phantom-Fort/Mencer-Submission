@@ -1,0 +1,20 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+crowdfund = "GzUGzu5NB1RMoYVw27nkGrZuVrgZ1YAanToagVVpgw3P"
+
+[programs.devnet]
+crowdfund = "GzUGzu5NB1RMoYVw27nkGrZuVrgZ1YAanToagVVpgw3P"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+anchor-lang = "0.32.0"
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"

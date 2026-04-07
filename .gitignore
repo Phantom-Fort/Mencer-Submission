@@ -1,0 +1,17 @@
+# Build outputs
+target/
+.anchor/
+dist/
+build/
+
+# Dependencies
+node_modules/
+
+# Keys and secrets (never commit these!)
+*.json-keypair
+id.json
+wallet.json
+
+# Logs and temp files
+*.log
+.DS_Store

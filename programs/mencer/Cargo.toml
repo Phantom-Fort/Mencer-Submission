@@ -1,0 +1,23 @@
+[package]
+name = "crowdfund"
+version = "0.1.0"
+description = "Solana Crowdfunding Platform"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "crowdfund"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.32.0"
+
+blake3 = "=1.8.2"
+constant_time_eq = "=0.3.1"
+base64ct = "=1.7.3"
